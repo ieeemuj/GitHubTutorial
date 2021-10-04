@@ -1,5 +1,6 @@
 const dino = document.getElementById("dino");
 const cactus = document.getElementById("cactus");
+audioObj = new Audio("./audio/beep-07a.mp3");
 
 function jump() {
   if (dino.classList != "jump") {
@@ -7,10 +8,10 @@ function jump() {
 
     setTimeout(function () {
       dino.classList.remove("jump");
+      audioObj.play();
     }, 300);
   }
 }
-
 let isAlive = setInterval(function () {
   // get current dino Y position
   let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
