@@ -62,3 +62,9 @@
     left: -20px;
   }
 }
+
+/* THEME BUTTON CSS (rajitk13 PR) */
+.theme_btn {
+  display: flex;
+  justify-content: center;
+}

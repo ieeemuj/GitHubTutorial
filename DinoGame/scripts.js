@@ -33,3 +33,17 @@ let isAlive = setInterval(function () {
 document.addEventListener("keydown", function (event) {
   jump();
 });
+
+// DARK MORE AND LIGHT MODE JQUERY (rajitk13)
+$(".dark_mode").click(function () {
+
+  $("body").css({ "background-color": "black", "color": "white" });
+  $(".game").css({ "border": "1px solid white" });
+
+});
+
+$(".light_mode").click(function () {
+  $("body").css({ "background-color": "#FFFFFF", "color": "#000000" });
+  $(".game").css({ "border": "1px solid black" });
+
+})
