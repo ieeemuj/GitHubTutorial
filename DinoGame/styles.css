@@ -1,12 +1,12 @@
 .game {
   width: 600px;
   height: 200px;
-  border: 1px solid black;
+  border: 4px solid gray;
   margin: auto;
 }
 
 #dino {
-  width: 50px;
+  width: 45px;
   height: 50px;
   background-image: url(img/trex.png);
   background-size: 50px 50px;
@@ -24,11 +24,11 @@
   }
 
   30% {
-    top: 130px;
+    top: 160px;
   }
 
   50% {
-    top: 80px;
+    top: 50px;
   }
 
   80% {
@@ -36,7 +36,7 @@
   }
 
   100% {
-    top: 150px;
+    top: 1 50px;
   }
 }
 
@@ -61,4 +61,10 @@
   100% {
     left: -20px;
   }
+}
+
+/* THEME BUTTON CSS (rajitk13 PR) */
+.theme_btn {
+  display: flex;
+  justify-content: center;
 }
