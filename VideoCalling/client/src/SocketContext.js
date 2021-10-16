@@ -4,7 +4,8 @@ import {io} from 'socket.io-client'
 import Peer from 'simple-peer'
 const SocketContext = createContext()
 
-const socket=io("http://localhost:500/")
+const socket=io("http://localhost:5000/")
+//rajitk13 correction 500 changed to 5000 in the link
 
 const ContextProvider = ({children})=>{
 

@@ -1,4 +1,5 @@
 const app =require('express')()
+//rajitk13 expres changed to express
 const server=require('http').createServer(app)
 const cors=require('cors')
 
@@ -11,7 +12,7 @@ const io=require('socket.io')(server,{
 
 app.use(cors())
 
-const PORT=process.env.PORT||5000 
+const PORT=process.env.PORT||5000 ;
 
 app.get("/",(req,res)=>{
     res.send('Server is running')
